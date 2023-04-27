@@ -1,0 +1,414 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: "Courier New", monospace;
+}
+#LoginHeader {
+  background-color: white;
+  width: 100vw;
+  display: flex;
+}
+.headerText {
+  color: black;
+  align-self: center;
+}
+#mainLogo {
+  height: 175px;
+}
+#loginButton {
+  color: rgb(199, 247, 187);
+  background-color: rgb(60, 179, 113);
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.firstRow {
+  margin-top: 20px;
+  display: flex;
+}
+
+.fNameBox {
+  margin-left: 50px;
+}
+
+.lNameBox {
+  margin-right: 125px;
+}
+
+.lnError{
+  margin-left: 50px;
+}
+
+.weightBox {
+  margin-left: -50px;
+}
+
+.longBox {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.signupButton {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.fNameInput {
+  min-width: 325px;
+  max-width: 325px;
+}
+
+.lNameInput {
+  min-width: 325px;
+  max-width: 325px;
+  margin-left: 50px;
+}
+
+.weightInput {
+  max-width: 85px;
+  margin-left: 50px;
+}
+
+.lNameLabel {
+  margin-left: 50px;
+}
+
+.weightLabel {
+  margin-left: 50px;
+}
+.selectedFoodBuble:hover{
+  cursor: pointer;
+  background-color: bisque;
+}
+.recipeDetail:hover{
+  cursor: pointer;
+}
+
+.darkBGVerify{
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 500vw;
+  height: 500vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: opacity 0.3s ease;
+}
+
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  transition: opacity 0.3s ease;
+  overflow-y:hidden;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+.responseModal{
+  width: 300px;
+  height: 250px;
+  background: white;
+  color: white;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+.verifyModal{
+  width: 300px;
+  height: 175px;
+  background: white;
+  color: white;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.theModal {
+  max-height: 600px;
+  background: white;
+  color: white;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  padding-bottom:400px;
+}
+
+.heading {
+  margin: 0;
+  padding: 10px;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modalContent {
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  max-height:100%;
+}
+
+.modalActions {
+  position: absolute;
+  bottom: 2px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#verifyButtonDiv{
+  text-align: center;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.closeBtn {
+  cursor: pointer;
+  font-weight: 1000;
+  border-radius: 8px;
+  border: none;
+  font-size: 35px;
+  background: none;
+  transition: all 0.25s ease;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  align-self: flex-end;
+}
+.backBtn {
+  cursor: pointer;
+  font-weight: 1000;
+  border-radius: 8px;
+  border: none;
+  font-size: 40px;
+  background: none;
+  transition: all 0.25s ease;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+.backBtn:hover {
+  color: red;
+}
+
+.closeBtn:hover {
+  color: red;
+}
+
+.okayBtn {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: none;
+  color: #fff;
+  background: rgb(5, 32, 230);
+  transition: all 0.25s ease;
+}
+
+.okayBtn:hover {
+  box-shadow: 0 10px 20px -10px rgba(255, 62, 78, 0.6);
+  transform: translateY(-1px);
+  background: rgb(32, 32, 223);
+}
+
+#verifyButton{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 37, 37, 0.911);
+  border-color: black;
+}
+
+#verifyButton:hover {
+  box-shadow: 0 5px 13px -10px black;
+  transform: translateY(-1px);
+}
+
+.largeModal{
+  margin-top: 150px;
+  width: 1000px;
+  height: 700px;
+}
+
+.mediumModal{
+  width: 700px;
+  height: 550px;
+}
+#editInputsDiv{
+  min-width: 780px;
+  min-height: 350px;
+}
+.recipeListDiv{
+  height:400px;
+  overflow:auto;
+}
+.errorFontSize{
+  font-size: 0.75em ;
+}
+#editProfileButton:disabled,
+#editProfileButton[disabled]{
+  background-color: #cccccc;
+  color: #666666;
+  border: 1px solid #999999;
+}
+.myAccountModal{
+  background-color: white;
+  z-index: 10;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  width:800px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+.addRecipeModal{
+  min-width:1000px;
+  min-height: 660px;
+  width:auto;
+  height:auto;
+  max-width: 1000px;
+  margin-top:160px;
+}
+#foodSearch{
+  width: 80%;
+  float: left;
+  height: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.addFoodSearchComponents{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#addFoodSearchButton{
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 0px;
+  background-color: #fc5d51;
+  border-color: black;
+}
+
+#addFoodSearchButton:hover {
+  transform: translate(-0.5px, 0.5px);
+}
+
+.foodSearchTable{
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#addFoodButton{
+  background-color: #A6E582;
+  border-color: black;
+}
+
+#addFoodButton:hover {
+  transform: translate(-0.5px, 0.5px);
+}
+
+.foodItem{
+  width:930px;
+  height:100px;
+  margin-left: 20px;
+  border:2px solid grey;
+  background-color: white;
+}
+
+.foodItem:focus{
+  background-color: rgb(240, 240, 104);
+}
+
+.nutrientCatHeading{
+  font-size: 30px;
+  margin-bottom:20px;
+}
+#bottomSubPanelHeading{
+  margin-top:45px;
+  margin-bottom:30px;
+  font-size:30px;
+  text-align:center;
+}
+
+.portionSelection{
+  margin-bottom: 150px;
+  position: absolute;
+}
+
+.selectQuantity{
+  margin-bottom: -50px;
+}
+
+.shortWidth{
+  width: 250px;
+  margin-left: 465px;
+}
+
+#portionsToSelect{
+  margin-bottom: 25px;
+}
+
+#topPanel{
+  max-width: 500px;
+}
+
+.directionButton{
+  margin-left: 20px;
+  height: 75px;
+  color: black
+}
+
+.rightButton{
+  margin-left: -100px;
+}
+
+#mainInfoBox{
+  position: center;
+}
+
+#timeSubHeader{
+  width: 300px;
+  margin-left: -25px;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}

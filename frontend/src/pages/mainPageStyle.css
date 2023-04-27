@@ -1,0 +1,149 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: "Courier New", monospace;
+}
+
+#content {
+    max-width:100vw;
+    max-height:100vh;
+    overflow:hidden;
+}
+#panels {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+}
+#topPanel {
+  display:flex;
+  flex-direction: row;
+  background-color:white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-right: 130px;
+}
+
+#timeHeader {
+  font-size:30px;
+}
+.directionButton {
+  margin-top:10px;
+  font-size: 30px;
+}
+#mainInfoBox {
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.dayFood {
+  display:flex;
+  justify-content: space-between;
+  gap:40px;
+  font-size: 20px;
+  margin-left:150px;
+  margin-bottom:20px;
+}
+.removeFoodButton {
+  color:red;
+  justify-self:right;
+}
+.editFoodButton {
+  font-size:17px;
+  color:green;
+  justify-self: right;
+}
+.buttons {
+  display:flex;
+  gap:10px;
+}
+#bottomSubPanel {
+  margin-top:45px;
+  max-height: 220px;
+  overflow-x: hidden;
+}
+.subPanelHeading{
+  margin-top:45px;
+  margin-bottom:30px;
+  font-size:30px;
+  text-align:center;
+}
+.foodName{
+  width:500px;
+}
+#rightPanel {
+  width: 80vw;
+  display:flex;
+  background-color:white;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  }
+.foodUnit{
+  width: 200px;
+}
+#bottomSubPanel {
+  overflow-y: auto;
+  width:800px;
+}
+#leftPanel {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+#logoHeader {
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.leftPanelButton{
+  background-color: indianred;
+  color:white;
+  height:50px;
+  text-align: center;
+  text-justify: center;
+  padding-top:4px;
+  margin-right:15px;
+  margin-left:50px;
+  margin-bottom:50px;
+  border-radius: 5px;
+}
+.nutrientCatHeading{
+  font-size: 30px;
+  margin-bottom:20px;
+}
+.nutrientBar{
+  width:80px;
+  height:10px;
+  background-color:indianred;
+}
+.nutrientBars{
+  display:flex;
+  width: 800px;
+  flex-wrap:wrap;
+}
+.nutrientElement{
+  width:240px;
+  display:flex;
+  flex-direction: column;
+  margin-bottom:15px;
+  flex-wrap:wrap;
+}
+#BSP{
+  height:300px;
+}
+.nutrientBarProg{
+  width:20px;
+  height:10px;
+  background-color:lightgreen;
+
+}
+.foodList{
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 200px;
+  padding-right:200px;
+}
