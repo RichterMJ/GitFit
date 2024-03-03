@@ -74,8 +74,6 @@ Production mode on Heroku:
 
 # Team
 
-We are group 16 of Dr. Leinecker's POOSD class.
-
 Our members:
 - Hieu Dang
 - Kevin Cahalan
